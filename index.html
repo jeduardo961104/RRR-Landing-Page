@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revive, Renew & Restore Inc. — Rivian-Certified Collision Repair | Jacksonville, FL</title>
+    <meta name="description"
+        content="North Florida's only Rivian-certified collision repair shop. Premium paint, dent removal, and fleet services for Jacksonville, FL, North Florida & Georgia. Book your service today." />
+    <meta name="keywords"
+        content="Rivian certified repair, collision repair Jacksonville FL, auto body shop North Florida, Amazon DSP fleet repair, Rivian R1T R1S body shop, paintless dent removal, commercial fleet repair Georgia" />
+    <meta property="og:title" content="Revive, Renew & Restore Inc. — Rivian-Certified Collision Repair" />
+    <meta property="og:description"
+        content="The only Rivian-certified collision repair shop in North Florida. Premium service for EV owners and commercial fleets." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/png" href="logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Animated Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- ═══════════════════════════════ NAVBAR ═══════════════════════════════ -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo" id="nav-logo-link">
+                <img src="logo.png" alt="Revive Renew Restore Logo" class="nav-logo-img"
+                    onerror="this.style.display='none'" />
+                <span class="nav-logo-text">Revive<span class="accent">,</span> Renew <span class="accent">&amp;</span>
+                    Restore</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                <li><a href="#fleet" class="nav-link">Fleet</a></li>
+                <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#track" class="btn btn-ghost nav-track" id="nav-track-btn">Track Repair</a>
+                <a href="#contact" class="btn btn-primary nav-cta" id="nav-cta">Book Service</a>
+            </div>
+            <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <ul class="mobile-links">
+            <li><a href="#home" class="mobile-link">Home</a></li>
+            <li><a href="#services" class="mobile-link">Services</a></li>
+            <li><a href="#how-it-works" class="mobile-link">How It Works</a></li>
+            <li><a href="#fleet" class="mobile-link">Fleet Services</a></li>
+            <li><a href="#reviews" class="mobile-link">Reviews</a></li>
+            <li><a href="#contact" class="mobile-link">Contact</a></li>
+        </ul>
+        <div class="mobile-cta-group">
+            <a href="#track" class="btn btn-ghost btn-full" id="mobile-track-btn">🔍 Track My Repair</a>
+            <a href="#contact" class="btn btn-primary btn-full" id="mobile-cta">Book Service Now</a>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
+    <section id="home" class="hero">
+        <div class="hero-bg-image">
+            <img src="hero_cinematic.png" alt="Premium Rivian Collision Repair Facility" class="hero-bg-img" />
+            <div class="hero-bg-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-logo-showcase" id="hero-logo-showcase">
+                <!-- Rivian badge - left -->
+                <div class="hero-cert-badge hero-cert-left">
+                    <img src="rivian badge.png" alt="Rivian Certified" class="hero-cert-img" />
+                    <span class="hero-cert-label">Rivian Certified</span>
+                </div>
+                <!-- Main logo - center -->
+                <div class="hero-logo-center">
+                    <div class="hero-logo-ring"></div>
+                    <img src="logo.png" alt="Revive Renew Restore" class="hero-logo-main" />
+                </div>
+                <!-- Amazon badge - right -->
+                <div class="hero-cert-badge hero-cert-right">
+                    <img src="amazon badge.png" alt="Amazon DSP Partner" class="hero-cert-img" />
+                    <span class="hero-cert-label">Amazon DSP</span>
+                </div>
+            </div>
+            <div class="hero-badge" id="hero-badge">
+                <span class="badge-dot"></span>
+                <span>North Florida's Only Rivian-Certified Shop</span>
+            </div>
+            <h1 class="hero-title" id="hero-title">
+                Your Rivian<br />
+                Deserves<br />
+                <span class="accent glow-text">Perfection.</span>
+            </h1>
+            <p class="hero-description" id="hero-desc">
+                Premium collision repair, paint restoration, and dent removal — exclusively crafted for
+                <strong>Rivian owners</strong> and <strong>commercial fleets</strong> across Jacksonville, FL, North
+                Florida &amp; Georgia.
+            </p>
+            <div class="hero-actions" id="hero-actions">
+                <a href="#contact" class="btn btn-primary btn-lg" id="hero-cta-primary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    Book Service
+                </a>
+                <a href="#track" class="btn btn-ghost btn-lg" id="hero-cta-secondary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    Track Your Repair
+                </a>
+            </div>
+            <div class="hero-stats" id="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Rivian Certified</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Repairs Completed</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">2</span>
+                    <span class="stat-label">States Served</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator" id="hero-scroll">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════ TRUST SECTION ═══════════════════════════════ -->
+    <section class="trust-section" id="trust">
+        <div class="container">
+            <p class="trust-label">Why clients trust us</p>
+            <div class="trust-grid">
+                <div class="trust-card" data-animate>
+                    <div class="trust-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="trust-title">Rivian Certified</h3>
+                    <p class="trust-desc">Official certification to repair Rivian EVs. The only shop in North Florida
+                        with this credential.</p>
+                </div>
+                <div class="trust-card" data-animate>
+                    <div class="trust-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="trust-title">OEM Standards</h3>
+                    <p class="trust-desc">Every repair meets original manufacturer specifications with factory-matched
+                        paint and materials.</p>
+                </div>
+                <div class="trust-card" data-animate>
+                    <div class="trust-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="trust-title">Live Repair Tracking</h3>
+                    <p class="trust-desc">Real-time updates on every stage of your vehicle's repair. No more wondering —
+                        just clarity.</p>
+                </div>
+                <div class="trust-card" data-animate>
+                    <div class="trust-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3 class="trust-title">Fleet Specialists</h3>
+                    <p class="trust-desc">Trusted by Amazon DSP operators and commercial fleets for fast, reliable
+                        multi-vehicle service.</p>
+                </div>
+                <div class="trust-card" data-animate>
+                    <div class="trust-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="trust-title">Fast Turnaround</h3>
+                    <p class="trust-desc">We know your vehicle — or fleet — is your livelihood. We work fast without
+                        compromising quality.</p>
+                </div>
+                <div class="trust-card" data-animate>
+                    <div class="trust-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="trust-title">Insurance Assistance</h3>
+                    <p class="trust-desc">Our team handles the paperwork and works directly with all major insurance
+                        carriers on your behalf.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════ HOW IT WORKS ═══════════════════════════════ -->
+    <section id="how-it-works" class="how-it-works section">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <div class="section-eyebrow">The Process</div>
+                <h2 class="section-title">Simple.<br /><span class="accent">Transparent. Done Right.</span></h2>
+                <p class="section-subtitle">Four steps from damage to drive-ready. We keep you informed every mile of
+                    the way.</p>
+            </div>
+            <div class="steps-container" id="steps-container">
+                <div class="step" id="step-1" data-animate>
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                        </div>
+                        <h3 class="step-title">Book Your Service</h3>
+                        <p class="step-desc">Schedule online or call us directly. We'll confirm your appointment and
+                            what to expect on arrival.</p>
+                    </div>
+                    <div class="step-connector"></div>
+                </div>
+                <div class="step" id="step-2" data-animate>
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M5 17H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v3"></path>
+                                <rect x="9" y="11" width="14" height="10" rx="2"></rect>
+                                <circle cx="12" cy="16" r="1"></circle>
+                            </svg>
+                        </div>
+                        <h3 class="step-title">Drop Off Your Vehicle</h3>
+                        <p class="step-desc">Bring your vehicle in. Our certified technicians assess and document
+                            everything before any work begins.</p>
+                    </div>
+                    <div class="step-connector"></div>
+                </div>
+                <div class="step" id="step-3" data-animate>
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="step-title">Real-Time Repair Updates</h3>
+                        <p class="step-desc">Track your repair progress live. Get SMS/email updates at every milestone —
+                            no silence, no guessing.</p>
+                    </div>
+                    <div class="step-connector"></div>
+                </div>
+                <div class="step" id="step-4" data-animate>
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="step-title">Ready for Pickup</h3>
+                        <p class="step-desc">Your vehicle is returned in showroom condition. We walk you through every
+                            repair before you leave.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════ REPAIR TRACKING ═══════════════════════════════ -->
+    <section id="track" class="tracking-section section">
+        <div class="container">
+            <div class="tracking-grid">
+                <div class="tracking-text" data-animate>
+                    <div class="section-eyebrow">Real-Time Tracking</div>
+                    <h2 class="section-title">Know Exactly<br /><span class="accent">Where Your Vehicle Is.</span></h2>
+                    <p class="section-desc">
+                        Enter your repair code and get an instant view of your vehicle's progress. No phone calls
+                        needed.
+                        No waiting. Just live transparency — because you deserve to know.
+                    </p>
+                    <ul class="tracking-features">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Live stage-by-stage progress
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            SMS &amp; email milestone notifications
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Estimated completion date updates
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Photo documentation at each stage
+                        </li>
+                    </ul>
+                </div>
+                <div class="tracking-ui" data-animate>
+                    <div class="tracker-card" id="tracker-card">
+                        <div class="tracker-header">
+                            <div class="tracker-logo-area">
+                                <span class="tracker-brand">R&amp;R Tracker</span>
+                                <span class="tracker-live"><span class="live-dot"></span> Live</span>
+                            </div>
+                        </div>
+                        <div class="tracker-search">
+                            <input type="text" id="track-input" class="tracker-input"
+                                placeholder="Enter repair code (e.g. RRR-2024-001)" />
+                            <button class="tracker-btn" id="track-btn">Track</button>
+                        </div>
+                        <div class="tracker-result" id="tracker-result">
+                            <div class="tracker-vehicle">
+                                <div class="vehicle-info">
+                                    <div class="vehicle-badge">2024 Rivian R1T</div>
+                                    <div class="vehicle-ticket">RRR-2024-001</div>
+                                </div>
+                                <div class="vehicle-status-badge">In Progress</div>
+                            </div>
+                            <div class="tracker-stages">
+                                <div class="stage completed">
+                                    <div class="stage-dot completed-dot"></div>
+                                    <div class="stage-content">
+                                        <div class="stage-name">Assessment &amp; Intake</div>
+                                        <div class="stage-date">Mar 10 · 9:00 AM</div>
+                                    </div>
+                                    <div class="stage-check">✓</div>
+                                </div>
+                                <div class="stage completed">
+                                    <div class="stage-dot completed-dot"></div>
+                                    <div class="stage-content">
+                                        <div class="stage-name">Structural Repair</div>
+                                        <div class="stage-date">Mar 11 · 2:30 PM</div>
+                                    </div>
+                                    <div class="stage-check">✓</div>
+                                </div>
+                                <div class="stage active">
+                                    <div class="stage-dot active-dot"></div>
+                                    <div class="stage-content">
+                                        <div class="stage-name">Paint &amp; Refinishing</div>
+                                        <div class="stage-date">Est. Mar 13 · In booth now</div>
+                                    </div>
+                                    <div class="stage-pulse"></div>
+                                </div>
+                                <div class="stage pending">
+                                    <div class="stage-dot pending-dot"></div>
+                                    <div class="stage-content">
+                                        <div class="stage-name">Quality Inspection</div>
+                                        <div class="stage-date">Est. Mar 14</div>
+                                    </div>
+                                </div>
+                                <div class="stage pending">
+                                    <div class="stage-dot pending-dot"></div>
+                                    <div class="stage-content">
+                                        <div class="stage-name">Ready for Pickup</div>
+                                        <div class="stage-date">Est. Mar 14 · Afternoon</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tracker-eta">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                Estimated ready: <strong>March 14, 2024</strong>
+                            </div>
+                        </div>
+                        <div class="tracker-empty" id="tracker-empty">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                            <p>Enter your repair code above to see live status</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════ SERVICES ═══════════════════════════════ -->
+    <section id="services" class="services section">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <div class="section-eyebrow">Our Services</div>
+                <h2 class="section-title">Premium Repair.<br /><span class="accent">Every Detail.</span></h2>
+                <p class="section-subtitle">From a single dent to a full collision rebuild, we treat every vehicle like
+                    it's our own.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card large" id="service-collision" data-animate>
+                    <div class="service-img-wrap">
+                        <img src="services_grid.png" alt="Collision Repair" class="service-img" />
+                        <div class="service-img-overlay"></div>
+                    </div>
+                    <div class="service-card-content">
+                        <div class="service-number">01</div>
+                        <h3 class="service-title">Collision Repair</h3>
+                        <p class="service-desc">From minor fender-benders to major structural damage, our
+                            Rivian-certified technicians restore your vehicle to factory specifications using OEM parts
+                            and approved repair procedures.</p>
+                        <a href="#contact" class="service-link">
+                            Get Estimate
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="service-card" id="service-paint" data-animate>
+                    <div class="service-icon-wrap">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"></path>
+                            <path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"></path>
+                        </svg>
+                    </div>
+                    <div class="service-number">02</div>
+                    <h3 class="service-title">Paint &amp; Refinishing</h3>
+                    <p class="service-desc">Computer-matched paint blending and full-panel refinishing in our
+                        state-of-the-art spray booth. Invisible repairs, factory finish.</p>
+                    <a href="#contact" class="service-link">
+                        Get Estimate
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+                <div class="service-card" id="service-dent" data-animate>
+                    <div class="service-icon-wrap">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path
+                                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="service-number">03</div>
+                    <h3 class="service-title">Dent &amp; PDR</h3>
+                    <p class="service-desc">Paintless dent removal preserves your original factory finish. Perfect for
+                        hail damage, parking lot dings, and minor dents with no paint transfer.</p>
+                    <a href="#contact" class="service-link">
+                        Get Estimate
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+                <div class="service-card" id="service-rivian" data-animate>
+                    <div class="service-icon-wrap rivian-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <rect x="1" y="3" width="15" height="13" rx="2"></rect>
+                            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                            <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                            <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                        </svg>
+                    </div>
+                    <div class="service-number">04</div>
+                    <h3 class="service-title">Rivian EV Specialist</h3>
+                    <p class="service-desc">High-voltage battery system safety, aluminum-intensive body repair, and
+                        advanced driver assistance system recalibration after every repair.</p>
+                    <a href="#contact" class="service-link">
+                        Get Estimate
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════ FLEET B2B ═══════════════════════════════ -->
+    <section id="fleet" class="fleet-section section">
+        <div class="container">
+            <div class="fleet-grid">
+                <div class="fleet-visual" data-animate>
+                    <div class="fleet-img-wrap">
+                        <img src="fleet_b2b.png" alt="Amazon DSP Fleet Repair Services" class="fleet-img" />
+                        <div class="fleet-img-overlay"></div>
+                    </div>
+                    <div class="fleet-badge-card">
+                        <div class="fleet-badge-icon">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="1" y="3" width="15" height="13" rx="1"></rect>
+                                <path d="M16 8h4l3 5v3h-7V8z"></path>
+                                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="fleet-badge-value">Amazon DSP</div>
+                            <div class="fleet-badge-label">Preferred Partner</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fleet-content" data-animate>
+                    <div class="section-eyebrow">Fleet &amp; B2B</div>
+                    <h2 class="section-title">Your Fleet.<br /><span class="accent">Back on the Road. Fast.</span></h2>
+                    <p class="section-desc">
+                        Downtime costs money. We understand fleet operations — which is why we've built a dedicated
+                        pipeline for Amazon DSP operators and commercial fleet managers. Priority scheduling, bulk
+                        repair programs, and dedicated account management.
+                    </p>
+                    <div class="fleet-features">
+                        <div class="fleet-feature">
+                            <div class="fleet-feature-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Priority Scheduling</strong>
+                                <span>Fleet vehicles get priority bay access to minimize downtime</span>
+                            </div>
+                        </div>
+                        <div class="fleet-feature">
+                            <div class="fleet-feature-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                                    <line x1="2" y1="20" x2="22" y2="20"></line>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Fleet Account Management</strong>
+                                <span>Dedicated point of contact, consolidated billing &amp; repair reporting</span>
+                            </div>
+                        </div>
+                        <div class="fleet-feature">
+                            <div class="fleet-feature-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Bulk Repair Programs</strong>
+                                <span>Volume discounts and service contracts for 3+ vehicle fleets</span>
+                            </div>
+                        </div>
+                        <div class="fleet-feature">
+                            <div class="fleet-feature-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Multi-State Coverage</strong>
+                                <span>Serving fleets across Jacksonville FL, North Florida &amp; Georgia</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary btn-lg" id="fleet-cta">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        Get Fleet Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════ REVIEWS ═══════════════════════════════ -->
+    <section id="reviews" class="reviews section">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <div class="section-eyebrow">Customer Reviews</div>
+                <h2 class="section-title">Trusted by Owners.<br /><span class="accent">Proven by Results.</span></h2>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card" id="review-1" data-animate>
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-quote">"</div>
+                    <p class="review-text">I damaged my Rivian truck and was looking for a local repair shop to perform work for me. After searching online I found Revive, Renew &amp; Restore and I couldn't be happier with the results. Highly recommend!</p>
+                    <div class="review-author">
+                        <div class="author-avatar" style="background: linear-gradient(135deg, #DC2626, #991B1B);">A
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name">A.</div>
+                            <div class="author-role">Rivian Owner · Google Review</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card" id="review-2" data-animate>
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-quote">"</div>
+                    <p class="review-text">When I heard that we had a new Rivian-certified Collision Center in Jax and that they could complete full collision repairs, I was excited to check them out. The team is professional, knowledgeable, and delivered outstanding results.</p>
+                    <div class="review-author">
+                        <div class="author-avatar" style="background: linear-gradient(135deg, #7C3AED, #5B21B6);">J
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name">J.</div>
+                            <div class="author-role">Rivian Owner · Jacksonville, FL · Google Review</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card" id="review-3" data-animate>
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-quote">"</div>
+                    <p class="review-text">Had my Rivian Windshield replaced. They were professional, efficient, and dealt with a number of challenges along the way without any issues. Great communication throughout the entire process. Would definitely recommend!</p>
+                    <div class="review-author">
+                        <div class="author-avatar" style="background: linear-gradient(135deg, #059669, #065F46);">S
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name">S.</div>
+                            <div class="author-role">Rivian Owner · Google Review</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════ CTA SECTION ═══════════════════════════════ -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-inner" data-animate>
+                <h2 class="cta-title">Your Vehicle Deserves<br /><span class="accent">the Best in North Florida.</span>
+                </h2>
+                <p class="cta-desc">Join hundreds of Rivian owners and fleet operators who trust us with what matters
+                    most.</p>
+                <div class="cta-actions">
+                    <a href="#contact" class="btn btn-primary btn-xl" id="cta-book-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        Book Your Service
+                    </a>
+                    <a href="tel:+19043975385" class="btn btn-ghost btn-xl" id="cta-call-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.86a16 16 0 0 0 6.16 6.16l1.22-1.22a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                        (904) 397-5385
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════ CONTACT / BOOKING ═══════════════════════════════ -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="contact-inner">
+                <div class="contact-text" data-animate>
+                    <div class="section-eyebrow">Book a Service</div>
+                    <h2 class="section-title">Ready to Get<br /><span class="accent">Started?</span></h2>
+                    <p class="section-desc">
+                        Fill out the form and our team will contact you within 2 hours to confirm your appointment
+                        and provide a free estimate.
+                    </p>
+                    <div class="contact-info-items">
+                        <div class="contact-info-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>4150 Springrove St, Jacksonville, FL — Serving North FL &amp; Georgia</span>
+                        </div>
+                        <div class="contact-info-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <span>Mon–Fri: 8:00 AM – 5:00 PM · Sat: By Appointment · Sun: Closed</span>
+                        </div>
+                        <div class="contact-info-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.86a16 16 0 0 0 6.16 6.16l1.22-1.22a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                            <span>(904) 397-5385</span>
+                        </div>
+                        <div class="contact-info-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>reviverenewandrestore@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="full-name">Full Name *</label>
+                            <input type="text" id="full-name" name="fullName" placeholder="Your full name" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(904) 000-0000" required />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" placeholder="you@email.com" required />
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="vehicle">Vehicle (Year, Make, Model) *</label>
+                            <input type="text" id="vehicle" name="vehicle" placeholder="e.g. 2024 Rivian R1T"
+                                required />
+                        </div>
+                        <div class="form-group">
+                            <label for="service-type">Service Type</label>
+                            <select id="service-type" name="serviceType">
+                                <option value="" disabled selected>Select service type</option>
+                                <option value="collision">Collision Repair</option>
+                                <option value="paint">Paint &amp; Refinishing</option>
+                                <option value="dent">Dent Removal / PDR</option>
+                                <option value="rivian">Rivian EV Specialist</option>
+                                <option value="fleet">Fleet / B2B Services</option>
+                                <option value="other">Other / Not Sure</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Describe the damage or service needed</label>
+                        <textarea id="message" name="message" rows="4"
+                            placeholder="Tell us what happened and what you need..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full btn-lg" id="form-submit-btn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        Request Free Estimate
+                    </button>
+                    <p class="form-disclaimer">We'll respond within 2 hours during business hours. Free estimate, no
+                        obligation.</p>
+                    <div class="form-success" id="form-success">
+                        <span>🔴</span>
+                        <p>Request received! We'll contact you within 2 hours to confirm your appointment.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════ MAP SECTION ═══════════════════════════════ -->
+    <section class="map-section" id="location">
+        <div class="container">
+            <div class="map-header" data-animate>
+                <div class="section-eyebrow">Our Location</div>
+                <h2 class="section-title">Find Us in<br /><span class="accent">Jacksonville, FL</span></h2>
+            </div>
+        </div>
+        <div class="map-embed-wrap">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3467.1!2d-81.7199!3d30.2815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e5e3a7c3a3a3a3%3A0xa3a3a3a3a3a3a3a3!2s4150+Springrove+St%2C+Jacksonville%2C+FL!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Revive Renew Restore Location - 4150 Springrove Street Jacksonville FL" id="location-map">
+            </iframe>
+            <div class="map-overlay-card">
+                <div class="map-card-logo">R³</div>
+                <div class="map-card-info">
+                    <strong>Revive, Renew &amp; Restore Inc.</strong>
+                    <span>4150 Springrove St, Jacksonville, FL</span>
+                    <span>Mon–Fri: 8AM–5PM · Sat: By Appt · Sun: Closed</span>
+                    <a href="https://www.google.com/maps/search/?api=1&query=4150+Springrove+Street+Jacksonville+FL"
+                        target="_blank" rel="noopener" class="map-directions-btn">Get Directions →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo-link">
+                        <img src="logo.png" alt="Revive Renew Restore" class="footer-logo-img"
+                            onerror="this.style.display='none'" />
+                        <span class="footer-logo-text">Revive, Renew<br /><span class="accent">&amp; Restore
+                                Inc.</span></span>
+                    </a>
+                    <p class="footer-tagline">North Florida's only Rivian-certified<br />collision repair shop.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="social-icon" id="social-facebook" aria-label="Facebook">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" id="social-instagram" aria-label="Instagram">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" id="social-google" aria-label="Google Reviews">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                                    fill="#4285F4" />
+                                <path
+                                    d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                                    fill="#34A853" />
+                                <path
+                                    d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                                    fill="#FBBC05" />
+                                <path
+                                    d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                                    fill="#EA4335" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Collision Repair</a></li>
+                        <li><a href="#services">Paint &amp; Refinishing</a></li>
+                        <li><a href="#services">Dent Removal / PDR</a></li>
+                        <li><a href="#services">Rivian EV Specialist</a></li>
+                        <li><a href="#fleet">Fleet Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#track">Track My Repair</a></li>
+                        <li><a href="#reviews">Customer Reviews</a></li>
+                        <li><a href="#fleet">Fleet &amp; B2B</a></li>
+                        <li><a href="#contact">Book Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="footer-links footer-contact">
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            4150 Springrove St, Jacksonville, FL
+                        </li>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.86a16 16 0 0 0 6.16 6.16l1.22-1.22a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                            (904) 397-5385
+                        </li>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            reviverenewandrestore@gmail.com
+                        </li>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            Mon–Fri 8AM–5PM<br />Sat: By Appointment<br />Sun: Closed
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Revive, Renew &amp; Restore Inc. All rights reserved. Jacksonville, FL · North Florida ·
+                    Georgia</p>
+                <p class="footer-made">Built for those who demand <span class="accent">perfection</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
