@@ -255,7 +255,7 @@
     }
 
     // ─── PASTE YOUR GOOGLE APPS SCRIPT URL BELOW ───────────
-    const SHEET_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE';
+    const SHEET_URL = 'https://script.google.com/macros/s/AKfycbzMj4bZHgPHFimldXiGXon825DgWzQuKpmKiORKyZ5W_Cv7oatNblJtaCOp4YU3PT2z/exec';
     // ────────────────────────────────────────────────────────
 
     const payload = {
