@@ -255,7 +255,7 @@
     }
 
     // ─── PASTE YOUR GOOGLE APPS SCRIPT URL BELOW ───────────
-    const SHEET_URL = 'https://script.google.com/macros/s/AKfycbzMj4bZHgPHFimldXiGXon825DgWzQuKpmKiORKyZ5W_Cv7oatNblJtaCOp4YU3PT2z/exec';
+    const SHEET_URL = 'https://script.google.com/macros/s/AKfycbxgX5aXiUG5jCN189l3G8MXWr5aGKop7dvZnCpX2vYO2aIia6Hku5CsQrNLDlMBGg_l/exec';
     // ────────────────────────────────────────────────────────
 
     const payload = {
