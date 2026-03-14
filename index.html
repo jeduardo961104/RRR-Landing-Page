@@ -128,9 +128,14 @@
                     <img src="rivian badge.png" alt="Rivian Certified" class="hero-cert-img" />
                     <span class="hero-cert-label">Rivian<br>Certified</span>
                 </div>
-                <div class="hero-cert-badge">
+                <div class="hero-cert-badge hero-cert-right">
                     <img src="amazon badge.png" alt="Amazon DSP Partner" class="hero-cert-img" />
                     <span class="hero-cert-label">Amazon DSP</span>
+                </div>
+                <!-- Añadido PeelClear Badge -->
+                <div class="hero-cert-badge hero-cert-left" style="transform: rotate(1deg);">
+                    <img src="peelclear badge.png" alt="PeelClear Certified" class="hero-cert-img" />
+                    <span class="hero-cert-label">PeelClear</span>
                 </div>
             </div>
         </div>
@@ -217,7 +222,7 @@
             <div class="section-header" data-animate>
                 <div class="section-eyebrow">The Process</div>
                 <h2 class="section-title">Simple.<br /><span class="accent">Transparent. Done Right.</span></h2>
-                <p class="section-subtitle">Four steps from damage to drive-ready. We keep you informed every mile of
+                <p class="section-subtitle">Three steps from damage to drive-ready. We keep you informed every mile of
                     the way.</p>
             </div>
             <div class="steps-container" id="steps-container">
@@ -352,7 +357,7 @@
                     </a>
                 </div>
                 <div class="service-card" id="service-rivian" data-animate>
-                    <div class="service-icon-wrap rivian-icon">
+                    <div class="service-icon-wrap">
                         <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="1.5">
                             <rect x="1" y="3" width="15" height="13" rx="2"></rect>
@@ -373,6 +378,55 @@
                             <polyline points="12 5 19 12 12 19"></polyline>
                         </svg>
                     </a>
+                </div>
+                <div class="service-card" id="service-peelclear" data-animate>
+                    <div class="service-icon-wrap">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <!-- Paint Cup -->
+                            <path d="M12 2h3a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"></path>
+                            <!-- Gun Body -->
+                            <rect x="8" y="10" width="12" height="4" rx="1"></rect>
+                            <!-- Handle -->
+                            <path d="M16 14l1 7h-4l-1-7"></path>
+                            <!-- Hose connector -->
+                            <path d="M14 21v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1"></path>
+                            <!-- Trigger -->
+                            <path d="M12 14c-2 2-2 4 0 6"></path>
+                            <!-- Nozzle -->
+                            <path d="M8 11H5v2h3"></path>
+                            <!-- Spray effect -->
+                            <path d="M2 9l2 2"></path>
+                            <path d="M1 12h2"></path>
+                            <path d="M2 15l2-2"></path>
+                        </svg>
+                    </div>
+                    <div class="service-number">05</div>
+                    <h3 class="service-title">Certified <span style="background: #F98835; color: #fff; padding: 2px 8px; border-radius: 4px; font-weight: 800; font-family: var(--font-sans); letter-spacing: -0.5px;text-transform: lowercase;">peelclear&trade;</span> Service</h3>
+                    <p class="service-desc" style="margin-bottom: 12px;">RRR is proud to offer PeelClear, an advanced peelable paint removal system that restores surfaces without traditional sanding or harsh chemicals.</p>
+                    <div style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 24px;">
+                        <strong style="color: var(--text-primary);">Perfect for:</strong><br/>
+                        • Removing failed wraps<br/>
+                        • Removing old paint layers<br/>
+                        • Restoring fleet vehicles<br/>
+                        • Automotive refinishing prep
+                    </div>
+                    <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+                        <a href="#contact" class="service-link">
+                            Get Estimate
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="https://peelclear.com/" target="_blank" rel="noopener noreferrer" class="service-link" style="color: var(--text-muted);">
+                            Visit Official Site
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -644,6 +698,7 @@
                                 <option value="dent">Dent Removal / PDR</option>
                                 <option value="rivian">Rivian EV Specialist</option>
                                 <option value="fleet">Fleet / B2B Services</option>
+                                <option value="peelclear">Certified PeelClear Service</option>
                                 <option value="other">Other / Not Sure</option>
                             </select>
                         </div>

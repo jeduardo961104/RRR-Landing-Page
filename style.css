@@ -809,7 +809,7 @@ button {
 
 .steps-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 0;
     position: relative;
 }
@@ -817,11 +817,11 @@ button {
 .steps-container::before {
     content: '';
     position: absolute;
-    top: 44px;
-    left: 10%;
-    right: 10%;
+    top: 71px; /* perfectly centered on the icons */
+    left: 5%;
+    right: 5%;
     height: 1px;
-    background: linear-gradient(to right, transparent, var(--border-accent), transparent);
+    background: linear-gradient(to right, transparent, var(--accent), transparent);
     z-index: 0;
 }
 
@@ -1161,7 +1161,7 @@ button {
 
 .services-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     gap: 20px;
 }
