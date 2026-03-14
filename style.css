@@ -2049,9 +2049,9 @@ button {
         border-bottom: 1px solid var(--border-subtle);
     }
 
-    .trust-card:nth-child(5),
-    .trust-card:nth-child(6) {
+    .trust-card:nth-child(5) {
         border-bottom: none;
+        grid-column: span 2;
     }
 
     .steps-container {
@@ -2131,6 +2131,7 @@ button {
     .trust-card {
         border-radius: var(--radius-lg);
         border: 1px solid var(--border-subtle) !important;
+        grid-column: span 1 !important;
     }
 
     .steps-container {
