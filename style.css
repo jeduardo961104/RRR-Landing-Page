@@ -673,6 +673,13 @@ button {
     margin: 0 32px 0 0;
 }
 
+.hero-badges-bottom {
+    display: flex;
+    gap: 32px;
+    margin-top: 48px;
+    animation: fadeSlideDown 0.8s ease 0.95s both;
+}
+
 .hero-scroll-indicator {
     position: absolute;
     bottom: 36px;
