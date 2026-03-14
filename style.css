@@ -742,14 +742,24 @@ button {
 }
 
 .trust-card:nth-child(3),
-.trust-card:nth-child(6) {
+.trust-card:nth-child(5) {
     border-right: none;
+}
+
+.trust-card:nth-child(4),
+.trust-card:nth-child(5) {
+    border-bottom: none;
 }
 
 .trust-card:nth-child(1),
 .trust-card:nth-child(2),
 .trust-card:nth-child(3) {
     border-bottom: 1px solid var(--border-subtle);
+}
+
+/* Make the 5th card span the remaining 2 columns */
+.trust-card:nth-child(5) {
+    grid-column: span 2;
 }
 
 .trust-card::before {
