@@ -147,69 +147,6 @@
   animatedEls.forEach(el => observer.observe(el));
 })();
 
-// ─── REPAIR TRACKER UI ─────────────────────────────────────
-(function initTracker() {
-  const trackBtn = document.getElementById('track-btn');
-  const trackInput = document.getElementById('track-input');
-  const trackerResult = document.getElementById('tracker-result');
-  const trackerEmpty = document.getElementById('tracker-empty');
-
-  if (!trackBtn) return;
-
-  // Initially hide result, show empty state
-  if (trackerResult) trackerResult.style.display = 'none';
-  if (trackerEmpty) trackerEmpty.style.display = 'block';
-
-  function runTrack() {
-    const code = trackInput.value.trim();
-    if (!code) {
-      trackInput.style.borderColor = '#DC2626';
-      trackInput.style.boxShadow = '0 0 0 3px rgba(220,38,38,0.2)';
-      trackInput.focus();
-      setTimeout(() => {
-        trackInput.style.borderColor = '';
-        trackInput.style.boxShadow = '';
-      }, 1500);
-      return;
-    }
-
-    // Show loading state
-    const originalText = trackBtn.textContent;
-    trackBtn.textContent = '...';
-    trackBtn.disabled = true;
-
-    setTimeout(() => {
-      trackerEmpty.style.display = 'none';
-      trackerResult.style.display = 'block';
-      trackerResult.style.animation = 'fadeIn 0.4s ease both';
-      trackBtn.textContent = originalText;
-      trackBtn.disabled = false;
-    }, 700);
-  }
-
-  trackBtn.addEventListener('click', runTrack);
-  trackInput.addEventListener('keydown', e => {
-    if (e.key === 'Enter') runTrack();
-  });
-
-  // Hero track CTA and nav track button
-  const heroTrackBtn = document.getElementById('hero-cta-secondary');
-  const navTrackBtn = document.getElementById('nav-track-btn');
-  const mobileTrackBtn = document.getElementById('mobile-track-btn');
-
-  [heroTrackBtn, navTrackBtn, mobileTrackBtn].forEach(btn => {
-    btn && btn.addEventListener('click', e => {
-      e.preventDefault();
-      const trackSection = document.getElementById('track');
-      if (trackSection) {
-        trackSection.scrollIntoView({ behavior: 'smooth' });
-        setTimeout(() => {
-          if (trackInput) trackInput.focus();
-        }, 600);
-      }
-    });
-  });
-})();
 
 // ─── CONTACT FORM ─────────────────────────────────────────
 (function initContactForm() {
