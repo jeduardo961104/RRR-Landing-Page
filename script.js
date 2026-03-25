@@ -192,7 +192,7 @@
     }
 
     // ─── PASTE YOUR GOOGLE APPS SCRIPT URL BELOW ───────────
-    const SHEET_URL = 'https://script.google.com/macros/s/AKfycbxgX5aXiUG5jCN189l3G8MXWr5aGKop7dvZnCpX2vYO2aIia6Hku5CsQrNLDlMBGg_l/exec';
+    const SHEET_URL = 'https://script.google.com/macros/s/AKfycbyEoGHBuDH9qTFeeyiXkflqh3JbcLUcGhX8H1uqfpVaJDtlsg4i_vC4NwxYlSv78Vtc/exec';
     // ────────────────────────────────────────────────────────
 
     const payload = {
