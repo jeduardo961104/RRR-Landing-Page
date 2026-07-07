@@ -1394,6 +1394,98 @@ button {
     color: var(--accent-light);
 }
 
+/* ─── PEELCLEAR SHOWCASE ─── */
+.peelclear-showcase {
+    background: var(--bg-surface);
+    border-top: 1px solid var(--border-subtle);
+    padding: 100px 0;
+}
+
+.showcase-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.showcase-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.showcase-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 28px 0 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.showcase-bullets li {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    padding: 18px 20px;
+    transition: all var(--transition-base);
+}
+
+.showcase-bullets li:hover {
+    border-color: rgba(249, 136, 53, 0.4);
+    background: var(--bg-card-hover);
+    transform: translateX(4px);
+}
+
+.showcase-bullets li svg {
+    color: #F98835;
+    flex-shrink: 0;
+    margin-top: 2px;
+    transition: transform var(--transition-base);
+}
+
+.showcase-bullets li:hover svg {
+    transform: scale(1.15);
+}
+
+.showcase-bullets strong {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 2px;
+}
+
+.showcase-bullets span {
+    font-size: 0.84rem;
+    color: var(--text-secondary);
+}
+
+.showcase-video-container {
+    position: relative;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    border: 1px solid rgba(249, 136, 53, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 40px rgba(249, 136, 53, 0.1);
+    transition: all var(--transition-base);
+}
+
+.showcase-video-container:hover {
+    border-color: #F98835;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6), 0 0 50px rgba(249, 136, 53, 0.2);
+    transform: translateY(-2px);
+}
+
+.showcase-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
 /* ─── FLEET SECTION ─── */
 .fleet-section {
     background: var(--bg-base);
@@ -2186,6 +2278,11 @@ button {
     .footer-grid {
         grid-template-columns: 1fr 1fr;
     }
+
+    .showcase-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -2353,5 +2450,9 @@ button {
 
     .nav-logo-text {
         font-size: 0.85rem;
+    }
+
+    .peelclear-showcase {
+        padding: 60px 0;
     }
 }
